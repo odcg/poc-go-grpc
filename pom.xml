@@ -50,7 +50,12 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <io.grpc.version>1.16.1</io.grpc.version>
+        <os-maven-plugin.version>1.6.1</os-maven-plugin.version>
+        <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
     </properties>
+
+
 
 
     <build>
@@ -69,7 +74,7 @@
             <plugin>
                 <groupId>org.xolstice.maven.plugins</groupId>
                 <artifactId>protobuf-maven-plugin</artifactId>
-                <version>${protobuf-maven-plugin.version}</version>
+                    <version>${protobuf-maven-plugin.version}</version>
                 <configuration>
                     <protocArtifact>
                         com.google.protobuf:protoc:3.3.0:exe:${os.detected.classifier}
@@ -90,6 +95,5 @@
             </plugin>
         </plugins>
     </build>
-s
 
 </project>

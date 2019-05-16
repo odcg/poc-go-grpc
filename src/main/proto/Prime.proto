@@ -1,9 +1,9 @@
 syntax = "proto3";
 option java_multiple_files = true;
-package om.capgemini.event.nantes.devfest2019.grpc;
+package com.capgemini.event.nantes.devfest2019.grpc;
 
 message PrimeRequest {
-    integer max = 1;
+    string max = 1;
 }
 
 message PrimeResponse {

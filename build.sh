@@ -1,0 +1,1 @@
+go build -buildmode=c-shared -o target/go/lib-prime.so \src\main\go\prime.go

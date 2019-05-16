@@ -1,0 +1,15 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package om.capgemini.event.nantes.devfest2019.grpc;
+
+message PrimeRequest {
+    integer max = 1;
+}
+
+message PrimeResponse {
+    string primeList = 1;
+}
+
+service PrimeService {
+    rpc prime(PrimeRequest) returns (PrimeResponse);
+}
